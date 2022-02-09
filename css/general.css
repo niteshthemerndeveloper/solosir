@@ -1,0 +1,73 @@
+/* =========== GENERAL STYLES =========== */
+
+/* =========== TYPOGRAPHY & FONT =========== */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+/* =========== RESETS & BASE =========== */
+
+html{
+  box-sizing: border-box;
+  /* Percentage of user's browsers font-size setting. 10px / 16px = 0.625 */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button,
+input{
+  font-size: inherit;
+  font-family: 'Rubik', sans-serif;
+}
+
+body{
+  background-color: rgb(252, 252, 252);
+  line-height: 1.6;
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+
+button, a{
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+h1,
+h2,
+h3{
+  font-weight: 700;
+  letter-spacing: -0.5;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+img{
+  height: auto;
+  max-width: 100%;
+}
+
+/* =========== REUSABLE CLASSES =========== */
+
+.container{
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.flex{
+  align-items: center;
+  display: flex;
+}
